@@ -23,6 +23,8 @@ The typical process chain starting with raw monthly mean data, organized by vari
 3. (*For 'zos'*) Subtract area-weighted mean at each timestep ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_subtract_areawmean_ocean.py))
 4. (*Optional*) Regrid to a common grid, for example 1 by 1 degrees ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/regridding/cmip6_regrid_to_common.py))
 
+Additionally, [various scripts](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_processing/compiling) are available to incorporate the data of each model in a multi-model ensemble netcdf.
+
 ## ROMS model experiments
 Code to prepare and run the ROMS model are available from [the following data repository](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
 ```
