@@ -2,7 +2,9 @@
  Python code to analyze seasonal differences in secular sea-level change simulated by CMIP6 models
 
 Please cite
-`<addr>` Publication
+```
+Publication
+```
 when using this repository for your own studies.
 
 ## List of figures in the manuscript and supplementary information
