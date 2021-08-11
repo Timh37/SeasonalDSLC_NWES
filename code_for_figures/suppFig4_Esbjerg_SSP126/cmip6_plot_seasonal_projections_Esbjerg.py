@@ -21,7 +21,7 @@ plt.close('all')
 baseyears = np.arange(1995,2015) #1995-2014
 futyears = np.arange(2081,2101) #2081-2100
 
-ssp = 'ssp585'
+ssp = 'ssp126'
 in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/ensemble_netcdfs/' #input directory ensemble data
 out_dir = '/Users/thermans/Documents/PhD/Phase4_seasonal/Figures' #where to store the figure
 model_list = list(np.genfromtxt('/Users/thermans/Documents/PhD/Phase4_seasonal/Analysis/compiling_ensembles/ens_model_list_'+ssp+'.txt',dtype='str'))
