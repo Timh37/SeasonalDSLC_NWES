@@ -24,7 +24,7 @@ The typical process chain starting with raw monthly mean data, organized by vari
 4. (*Optional*) Regrid to a common grid, for example 1 by 1 degrees ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/regridding/cmip6_regrid_to_common.py))
 
 ## ROMS model experiments
-Code to prepare and run the ROMS model are available from:
+Code to prepare and run the ROMS model are available from [the following data repository](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
 ```
 Hermans, Tim; Le Bars, D. (Dewi); Katsman, C.A. (Caroline); Carolina M.L. Camargo; Gerkema, Theo; Calafat, F. M. (Francisco); et al. (2020): Model input and output accompanying Drivers of interannual sea-level variability on the Northwestern European Shelf. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb 
 ```
