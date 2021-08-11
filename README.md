@@ -17,7 +17,7 @@ bash wget-20210723114729_ssp585_tauu.sh
 Wget scripts can be generated using search URLs.
 
 ## Processing CMIP6 data
-The typical process chain starting with raw monthly mean data:
+The typical process chain starting with raw monthly mean data, organized by variable by model:
 1. Merge separate time-chunks ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_merge_raw_timechunks.py))
 2. (*For 'zos'*) Dedrift using a linear fit to piControl ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_dedrift_linear.py))
 3. (*For 'zos'*) Subtract area-weighted mean at each timestep ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_subtract_areawmean_ocean.py))
