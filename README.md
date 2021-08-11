@@ -1,4 +1,4 @@
-# seasonalCMIP6
+# seasonalCMIP6: analyzing seasonal sea-level change on the Northwestern European Shelf
  Python code to analyze seasonal differences in secular sea-level change simulated by CMIP6 models
 
 ## List of figures in the manuscript and supplementary information
