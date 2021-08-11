@@ -8,7 +8,7 @@ Publication
 when using this repository for your own studies.
 
 ## Downloading CMIP6 data
-Using [**wget scripts**](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_downloading), e.g.:
+Using [wget scripts](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_downloading), e.g.:
 
 ```
 bash wget-20210723114729_ssp585_tauu.sh
@@ -25,10 +25,10 @@ The typical process chain starting with raw monthly mean data, organized by vari
 
 ## ROMS model experiments
 Code to prepare and run the ROMS model are available from:
-'''
+```
 Hermans, Tim; Le Bars, D. (Dewi); Katsman, C.A. (Caroline); Carolina M.L. Camargo; Gerkema, Theo; Calafat, F. M. (Francisco); et al. (2020): Model input and output accompanying Drivers of interannual sea-level variability on the Northwestern European Shelf. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb 
-'''
-Scripts to add dSWSpA from CMIP6 models to the ERA5-based wind-speed forcing used by [**Hermans et al. (2020) (JGRo)**](https://doi.org/10.1029/2020JC016325) are available here *to-do*.
+```
+Scripts to add dSWSpA from CMIP6 models to the ERA5-based wind-speed forcing used by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) are available here *to-do*.
 
 ## List of figures in the manuscript and supplementary information
 *The input data is available at the 4TU Research.Data Repository, DOI:* [To-do](http://github.com)
