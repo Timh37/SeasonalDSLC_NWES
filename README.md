@@ -8,32 +8,37 @@ The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern Europ
 when using this repository for your own studies.
 
 ## Downloading CMIP6 data
-Using [wget scripts](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_downloading), e.g.:
+We use wget scripts to download the raw CMIP6 data. Scripts are generated using search URLS. For example:
+
+```
+https://esgf-data.dkrz.de/esg-search/wget?project=CMIP6&query=variant_label:r1i*&experiment_id=ssp119&experiment_id=ssp126&experiment_id=ssp245&experiment_id=ssp370&experiment_id=ssp585&experiment_id=piControl&experiment_id=historical&variable=areacello&download_structure=variable,source_id&limit=10000
+```
+
+generates a wget script downloading the areacello variable for each CMIP6 model, for the historical and piControl experiments, for a range of SSPs and for variants with realization 1. The raw files are stored in a download structure organized by variable and model, and the script downloads a maximum of 10,000 files at once. The wget script can be initiated using the command window:
 
 ```
 bash wget-20210723114729_ssp585_tauu.sh
 ```
-
-Wget scripts can be generated using search URLs.
+Scripts for other variables can be simply obtained by adapting the search URL. 
 
 ## Processing CMIP6 data
-The process chain starts with raw monthly mean data, organized by variable by model. The processing steps are:
-1. Merge separate time-chunks ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_merge_raw_timechunks.py))
-2. (*For 'zos'*) Dedrift using a linear fit to piControl ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_dedrift_linear.py))
-3. (*For 'zos'*) Subtract area-weighted mean at each timestep ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_subtract_areawmean_ocean.py))
-4. (*Optional*) Regrid to a common grid, for example 1 by 1 degrees ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/regridding/cmip6_regrid_to_common.py))
+The process chain starts with raw monthly mean data, organized by variable by model. The processing steps we do are:
+1. Merging separate time-chunks into one file ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_merge_raw_timechunks.py))
+2. (*For 'zos'*) Dedrifting the full timeseries using a linear fit to piControl ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_dedrift_linear.py))
+3. (*For 'zos'*) Subtracting the area-weighted mean at each timestep ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_subtract_areawmean_ocean.py))
+4. (*Optional*) Regridding to a common grid, for example 1 by 1 degrees ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/regridding/cmip6_regrid_to_common.py))
 
-Additionally, I provide [various scripts](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_processing/compiling) to incorporate the data of each model in a multi-model ensemble netcdf.
+Additionally, we provide [various scripts](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/cmip6_processing/compiling) to incorporate the data of each model in a multi-model ensemble netcdf.
 
 ## ROMS model experiments
-Code to prepare and run the ROMS set-up are available from [the following data repository](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
+To prepare and run the ROMS set-up, scripts, data and instructions are made available by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) [here](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
 ```
 Hermans, Tim; Le Bars, D. (Dewi); Katsman, C.A. (Caroline); Carolina M.L. Camargo; Gerkema, Theo; Calafat, F. M. (Francisco); et al. (2020): Model input and output accompanying Drivers of interannual sea-level variability on the Northwestern European Shelf. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb 
 ```
-The scripts to add dSWVA from CMIP6 models to the ERA5-based wind-speed forcing used by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) are available here *to-do*.
+The scripts to add the dSWVA from CMIP6 models to the ERA5-based wind-speed forcing used by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) are available [here](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/mod_roms_forcing).
 
-## List of figures in the manuscript and supplementary information
-The input data for each figure can be obtained from the 4TU Research.Data Repository, DOI: [To-do](http://github.com)
+## Code & data to reproduce the figures in the manuscript
+This repository also contains the scripts required to plot the figures in the manuscript and the supplementary information (see table below). The required data for each figure can be obtained from the 4TU Research.Data Repository: [https://doi.org/10.4121/16831918](https://doi.org/10.4121/16831918)
 
 | Figure | Code | Input data | Brief description |
 | ------------- |:-------------:| -----| -----|
