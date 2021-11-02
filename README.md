@@ -3,7 +3,7 @@ Python code to analyze projected seasonal SLC on the NWES using CMIP6 data and h
 
 Please cite
 ```
-Publication TBD
+The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern European Shelf (in review), Hermans et al.
 ```
 when using this repository for your own studies.
 
