@@ -14,7 +14,7 @@ We use wget scripts to download the raw CMIP6 data. Scripts are generated using 
 https://esgf-data.dkrz.de/esg-search/wget?project=CMIP6&query=variant_label:r1i*&experiment_id=ssp119&experiment_id=ssp126&experiment_id=ssp245&experiment_id=ssp370&experiment_id=ssp585&experiment_id=piControl&experiment_id=historical&variable=areacello&download_structure=variable,source_id&limit=10000
 ```
 
-generates a wget script downloading the areacello variable for each CMIP6 model, for the historical and piControl experiments, for a range of SSPs and for variants with realization 1. The raw files are stored in a download structure organized by variable and model, and the script downloads a maximum of 10,000 files at once. The wget script can be initiated using the command window:
+[generates a wget script](https://esgf-data.dkrz.de/esg-search/wget?project=CMIP6&query=variant_label:r1i*&experiment_id=ssp119&experiment_id=ssp126&experiment_id=ssp245&experiment_id=ssp370&experiment_id=ssp585&experiment_id=piControl&experiment_id=historical&variable=areacello&download_structure=variable,source_id&limit=10000) downloading the areacello variable for each CMIP6 model, for the historical and piControl experiments, for a range of SSPs and for variants with realization 1. The raw files are stored in a download structure organized by variable and model, and the script downloads a maximum of 10,000 files at once. The wget script can be initiated using the command window:
 
 ```
 bash wget-20210723114729_ssp585_tauu.sh
@@ -35,7 +35,7 @@ To prepare and run the ROMS set-up, scripts, data and instructions are made avai
 ```
 Hermans, Tim; Le Bars, D. (Dewi); Katsman, C.A. (Caroline); Carolina M.L. Camargo; Gerkema, Theo; Calafat, F. M. (Francisco); et al. (2020): Model input and output accompanying Drivers of interannual sea-level variability on the Northwestern European Shelf. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb 
 ```
-The scripts to add the dSWVA from CMIP6 models to the ERA5-based wind-speed forcing used by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) are available [here](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/mod_roms_forcing).
+The scripts to add the dSWVA from CMIP6 models to the ERA5-based wind-speed forcing are available [here](https://github.com/Timh37/SeasonalSLC_NWES/tree/main/mod_roms_forcing).
 
 ## Code & data to reproduce the figures in the manuscript
 This repository also contains the scripts required to plot the figures in the manuscript and the supplementary information (see table below). The required data for each figure can be obtained from the 4TU Research.Data Repository: [https://doi.org/10.4121/16831918](https://doi.org/10.4121/16831918)
@@ -56,3 +56,4 @@ This repository also contains the scripts required to plot the figures in the ma
 | Suppl. Fig. 4 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig4_Esbjerg_SSP126/cmip6_plot_seasonal_projections_Esbjerg.py) | zos_CMIP6_ssp126_n36_nslocations_all_variants.nc, ens_model_list_ssp126.txt | Fig. 2 for SSP1-2.6 |
 | Suppl. Fig. 5 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig5_hist_fut_SWSA/cmip6_plot_SWSA.pyy) | zos_CMIP6_ssp585_n38_nwes_variant_averaged.nc, tauu_CMIP6_ssp585_n33_nwes_variant_averaged.nc, tauv_CMIP6_ssp585_n33_nwes_variant_averaged.nc, ens_model_list_ssp585.txt | Maps of historical and future SWSA for SSP5-8.5 |
 | Suppl. Fig. 6 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig6_obs/plot_ncep_aviso_SWSA_SSLA.py) | dt_global_allsat_msla_h_y1993m01-2019m04.nc, uwnd.mon.mean.nc, vwnd.mon.mean.nc (can be obtained from AVISO and NCEP websites) | Composite plots of SSLA (Aviso) and SWSA (derived from NCEP wind speed) in winter 2007 and summer 1995 |
+| Suppl. Fig. 7 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig7_numrealizations/cmip6_compare_dSSLA_locs_numRealizations.py) | zos_CMIP6_ssp585_n39_nslocations_all_variants.nc, ens_model_list_ssp585.txt | Comparison of dSSLA for SSP5-8.5, 2081-2100 relative to 1995-2014 at coastal locations using 1 realization v.s. using all realizations |
