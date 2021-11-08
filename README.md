@@ -89,6 +89,24 @@ This repository also contains the scripts required to plot the figures in the ma
 
 ## Built with
 
+* Python
+** CDO
+** numpy
+** matplotlib
+** xarray
+** scipy
+** os
+** fnmatch
+** cartopy
+** datetime
+** xesmf
+** iris
+** cmocean
+* txt
+* 
+
+## Acknowledgements
+* ESMValTool
 ## License
 
 ## Contact
