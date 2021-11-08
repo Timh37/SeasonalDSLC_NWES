@@ -6,8 +6,10 @@ from iris.analysis import AreaWeighted, Linear, Nearest, UnstructuredNearest
 from RegridESMpy import ESMF_REGRID_METHODS
 from RegridESMpy import regrid as esmpy_regrid
 
-
-#TH: see https://github.com/ESMValGroup/ESMValCore/blob/master/esmvalcore/preprocessor/_regrid.py
+"""
+Copyright ESMValGroup: Andela, B., Broetz, B., de Mora, L., Drost, N., Eyring, V., Koldunov, N., Lauer, A., Predoi, V., Righi, M., Schlund, M., Vegas-Regidor, J., Zimmermann, K., Bock, L., Diblen, F., Dreyer, L., Earnshaw, P., Hassler, B., Little, B., Loosveldt-Tomas, S., Smeets, S., Camphuijsen, J., Gier, B. K., Weigel, K., Hauser, M., Kalverla, P., Galytska, E., Cos-Espuña, P., Pelupessy, I., Koirala, S., Stacke, T., Alidoost, S., Jury, M., Sénési, S., & Crocker, T. (2021). ESMValCore (Version v2.4.0rc3) [Computer software]. https://doi.org/10.5281/zenodo.3387139
+Distributed under license: Apache-2.0 License
+"""
 
 # Regular expression to parse a "MxN" cell-specification.
 _CELL_SPEC = re.compile(
@@ -246,7 +248,7 @@ def _stock_cube(spec, lat_offset=True, lon_offset=True):
 
 	return cube
 
-#example
+#example usage (modified from original code)
 if __name__ == "__main__":
 	cube = iris.load("~/Downloads/zos_Omon_CanESM5_piControl_r1i1p1f1_gn_520101-540012.nc")[0]
 	
