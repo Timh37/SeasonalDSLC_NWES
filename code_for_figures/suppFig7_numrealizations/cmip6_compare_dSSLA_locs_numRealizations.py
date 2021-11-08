@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-plot dSSLA as function of number of realizations used per CMIP6 model
+compare dSSLA at coastal locations using a single v.s. using all available realizations per CMIP6 model
 
 @author: thermans
 """
