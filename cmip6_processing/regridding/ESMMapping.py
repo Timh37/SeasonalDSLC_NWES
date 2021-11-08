@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Provides mapping of a cube."""
+"""
+Provides mapping of a cube.
+
+Copyright ESMValGroup: Andela, B., Broetz, B., de Mora, L., Drost, N., Eyring, V., Koldunov, N., Lauer, A., Predoi, V., Righi, M., Schlund, M., Vegas-Regidor, J., Zimmermann, K., Bock, L., Diblen, F., Dreyer, L., Earnshaw, P., Hassler, B., Little, B., Loosveldt-Tomas, S., Smeets, S., Camphuijsen, J., Gier, B. K., Weigel, K., Hauser, M., Kalverla, P., Galytska, E., Cos-Espuña, P., Pelupessy, I., Koirala, S., Stacke, T., Alidoost, S., Jury, M., Sénési, S., & Crocker, T. (2021). ESMValCore (Version v2.4.0rc3) [Computer software]. https://doi.org/10.5281/zenodo.3387139
+Distributed under license: Apache-2.0 License
+"""
 
 import collections
 
