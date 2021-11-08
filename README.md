@@ -112,7 +112,7 @@ This repository also contains the scripts required to plot the figures in the ma
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Acknowledgements
-* [ESMValTool]('https://github.com/ESMValGroup/ESMValTool')
+* <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a/>
 * [PCMDI]('https://pcmdi.github.io/nominal_resolution/html/summary.html')
 
 <p align="right">(<a href="#top">back to top</a>)</p>
