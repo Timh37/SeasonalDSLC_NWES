@@ -1,5 +1,5 @@
 # SeasonalSLC_NWES
-Python code to analyze projected seasonal SLC on the NWES using CMIP6 data and high-resolution regional ocean model experiments.
+Python code to analyze projected seasonal SLC on the NWES using CMIP6 data and high-resolution regional ocean model experiments, and various other utility scripts.
 
 Please cite
 ```
