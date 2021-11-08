@@ -7,9 +7,9 @@
     <li><a href="#Downloading-CMIP6-data">Downloading CMIP6 data</a></li>
     <li><a href="#Processing-CMIP6-data">Processing CMIP6 data</a></li>
     <li><a href="#ROMS-model-experiments">ROMS model experiments</a></li>
-    <li><a href="#Code-and-data-to-reproduce-the-figures-in-the-manuscript">Code & data to reproduce the figures in the manuscript</a></li>
-    <li><a href="#Prerequisites-and-built-with">Prerequisites & built with</a></li>
-    <li><a href="#Acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Code-and-data-to-reproduce-the-figures-in-the-manuscript">Code and data to reproduce the figures in the manuscript</a></li>
+    <li><a href="#Prerequisites-and-built-with">Prerequisites and built with</a></li>
+    <li><a href="#Acknowledgements">Acknowledgements</a></li>
     <li><a href="#Contact">Contact</a></li>
     
   </ol>
