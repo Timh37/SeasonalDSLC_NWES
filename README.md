@@ -3,25 +3,15 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#SeasonalDSLC_NWES">SeasonalDSLC_NWES</a>
-      <ul>
-        <li><a href="#Downloading-CMIP6-data">Downloading CMIP6 data</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#SeasonalDSLC_NWES">SeasonalDSLC_NWES</a></li>
+    <li><a href="#Downloading-CMIP6-data">Downloading CMIP6 data</a></li>
+    <li><a href="#Processing-CMIP6-data">Processing CMIP6 data</a></li>
+    <li><a href="#ROMS-model-experiments">ROMS model experiments</a></li>
+    <li><a href="#Code-&-data-to-reproduce-the-figures-in-the-manuscript">Code & data to reproduce the figures in the manuscript</a></li>
+    <li><a href="#Prerequisites-&-built-with:">Prerequisites & built with:</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
   </ol>
 </details>
 
@@ -93,7 +83,7 @@ This repository also contains the scripts required to plot the figures in the ma
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Prerequisites & Built With:
+## Prerequisites & built with:
 
 * Python
   * CDO
@@ -114,10 +104,6 @@ This repository also contains the scripts required to plot the figures in the ma
 ## Acknowledgements
 * <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a>
 * <a href='https://pcmdi.github.io/nominal_resolution/html/summary.html'>PCMDI</a> (nominal_resolution)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## License
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
