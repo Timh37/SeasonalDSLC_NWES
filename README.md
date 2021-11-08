@@ -8,9 +8,9 @@
     <li><a href="#Processing-CMIP6-data">Processing CMIP6 data</a></li>
     <li><a href="#ROMS-model-experiments">ROMS model experiments</a></li>
     <li><a href="#Code-&-data-to-reproduce-the-figures-in-the-manuscript">Code & data to reproduce the figures in the manuscript</a></li>
-    <li><a href="#Prerequisites-&-built-with:">Prerequisites & built with:</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#Prerequisites-&-built-with">Prerequisites & built with</a></li>
+    <li><a href="#Acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Contact">Contact</a></li>
     
   </ol>
 </details>
@@ -83,7 +83,7 @@ This repository also contains the scripts required to plot the figures in the ma
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Prerequisites & built with:
+## Prerequisites & built with
 
 * Python
   * CDO
