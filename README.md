@@ -7,8 +7,8 @@
     <li><a href="#Downloading-CMIP6-data">Downloading CMIP6 data</a></li>
     <li><a href="#Processing-CMIP6-data">Processing CMIP6 data</a></li>
     <li><a href="#ROMS-model-experiments">ROMS model experiments</a></li>
-    <li><a href="#Code-&-data-to-reproduce-the-figures-in-the-manuscript">Code & data to reproduce the figures in the manuscript</a></li>
-    <li><a href="#Prerequisites-&-built-with">Prerequisites & built with</a></li>
+    <li><a href="#Code-and-data-to-reproduce-the-figures-in-the-manuscript">Code & data to reproduce the figures in the manuscript</a></li>
+    <li><a href="#Prerequisites-and-built-with">Prerequisites & built with</a></li>
     <li><a href="#Acknowledgments">Acknowledgments</a></li>
     <li><a href="#Contact">Contact</a></li>
     
@@ -60,7 +60,7 @@ The scripts to add the dSWVA from CMIP6 models to the ERA5-based wind-speed forc
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Code & data to reproduce the figures in the manuscript
+## Code and data to reproduce the figures in the manuscript
 This repository also contains the scripts required to plot the figures in the manuscript and the supplementary information (see table below). The required data for each figure can be obtained from the 4TU Research.Data Repository: [https://doi.org/10.4121/16831918](https://doi.org/10.4121/16831918)
 
 | Figure | Code | Input data | Brief description |
@@ -83,7 +83,7 @@ This repository also contains the scripts required to plot the figures in the ma
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Prerequisites & built with
+## Prerequisites and built with
 
 * Python
   * CDO
