@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 
-#plot maps of ensemble mean annual mean slc and wind stress change
+#plot maps of ensemble mean annual mean dslc and wind stress change
 
 @author: thermans
 """
