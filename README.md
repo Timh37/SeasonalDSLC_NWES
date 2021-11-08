@@ -112,8 +112,8 @@ This repository also contains the scripts required to plot the figures in the ma
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Acknowledgements
-* <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a/>
-* [PCMDI]('https://pcmdi.github.io/nominal_resolution/html/summary.html')
+* <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a>
+* <a href='https://pcmdi.github.io/nominal_resolution/html/summary.html'>PCMDI</a> (nominal_resolution)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
