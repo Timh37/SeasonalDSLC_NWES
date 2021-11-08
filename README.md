@@ -16,9 +16,9 @@
 </details>
 
 # SeasonalDSLC_NWES
-Python code to analyze projected seasonal ocean dynamic sea-level change (DSLC) on the Northwestern European Shelf (NWES), using CMIP6 data and high-resolution regional ocean model experiments, and various other utility scripts.
+Python code to analyze projected seasonal ocean dynamic sea-level change (DSLC) on the Northwestern European Shelf (NWES), using CMIP6 data and high-resolution regional ocean model experiments. Various utility scripts are also provided.
 
-This code accompanies:
+This code accompanies the manuscript:
 ```
 The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern European Shelf (in review), Hermans et al.
 ```
@@ -41,7 +41,7 @@ Scripts for other variables can be simply obtained by adapting the search URL.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Processing CMIP6 data
-The process chain starts with raw monthly mean data, organized by variable by model. The processing steps we do are:
+The process chain starts with raw monthly mean data, organized by variable by model. The processing steps we take are:
 1. Merging separate time-chunks into one file ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_merge_raw_timechunks.py))
 2. (*For 'zos'*) Dedrifting the full timeseries using a linear fit to piControl ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_dedrift_linear.py))
 3. (*For 'zos'*) Subtracting the area-weighted mean at each timestep ([**Code**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/cmip6_processing/cmip6_subtract_areawmean_ocean.py))
@@ -52,7 +52,7 @@ Additionally, we provide [various scripts](https://github.com/Timh37/SeasonalSLC
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## ROMS model experiments
-To prepare and run the ROMS set-up, scripts, data and instructions are made available by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325) [here](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
+To prepare and run the ROMS set-up, scripts, data and instructions are made available by [Hermans et al. (2020) (JGRo)](https://doi.org/10.1029/2020JC016325), [here](https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb):
 ```
 Hermans, Tim; Le Bars, D. (Dewi); Katsman, C.A. (Caroline); Carolina M.L. Camargo; Gerkema, Theo; Calafat, F. M. (Francisco); et al. (2020): Model input and output accompanying Drivers of interannual sea-level variability on the Northwestern European Shelf. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:d9656541-ff40-45d0-8859-ac644b155dfb 
 ```
@@ -63,7 +63,7 @@ The scripts to add the dSWVA from CMIP6 models to the ERA5-based wind-speed forc
 ## Code and data to reproduce the figures in the manuscript
 This repository also contains the scripts required to plot the figures in the manuscript and the supplementary information (see table below). The required data for each figure can be obtained from the 4TU Research.Data Repository: [https://doi.org/10.4121/16831918](https://doi.org/10.4121/16831918)
 
-| Figure | Code | Input data | Brief description |
+| Figure | Code | Data required | Brief description |
 | ------------- |:-------------:| -----| -----|
 | Fig. 1 | [**Link**](https://github.com/Timh37/SeasonalDSLC_NWES/blob/main/code_for_figures/Fig1_dSSLA/cmip6_plot_dSSLA.py) | zos_CMIP6_ssp585_n38_nwes_variant_averaged.nc, zos_CMIP6_ssp585_n39_nslocations_all_variants.nc, ens_model_list_ssp585.txt | Ensemble mean dSSLA for SSP5-8.5, 2081-2100 relative to 1995-2014, maps; and multi-model distributions at 8 example coastal locations |
 | Fig. 2 | [**Link**](https://github.com/Timh37/SeasonalDSLC_NWES/blob/main/code_for_figures/Fig2_Esbjerg/cmip6_plot_seasonal_projections_Esbjerg.py) | zos_CMIP6_ssp585_n39_nslocations_all_variants.nc, ens_model_list_ssp585.txt | Probabilistic projections of seasonal and annual mean SLC, and of SSLA, near Esbjerg, for SSP5-8.5 |
@@ -102,7 +102,7 @@ This repository also contains the scripts required to plot the figures in the ma
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Acknowledgements
-* <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a>
+* <a href='https://github.com/ESMValGroup/ESMValTool'>ESMValTool</a> (regridding)
 * <a href='https://pcmdi.github.io/nominal_resolution/html/summary.html'>PCMDI</a> (nominal_resolution)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
