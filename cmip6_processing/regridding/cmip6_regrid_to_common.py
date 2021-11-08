@@ -24,7 +24,7 @@ GG;
 Note: In order to run this code, activate the "esmpy" conda environment
 conda activate esmpy
 
-Created by: Tim Hermans, 02-11-20
+Created by: Tim Hermans & Gregory Garner, 02-11-20
 '''
 
 #input
