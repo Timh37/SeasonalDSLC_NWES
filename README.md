@@ -15,6 +15,7 @@
   </ol>
 </details>
 
+[![DOI](https://zenodo.org/badge/385943945.svg)](https://zenodo.org/badge/latestdoi/385943945)
 # SeasonalDSLC_NWES
 Python code to analyze projected seasonal ocean dynamic sea-level change (DSLC) on the Northwestern European Shelf (NWES), using CMIP6 data and high-resolution regional ocean model experiments. Various utility scripts are also provided.
 
