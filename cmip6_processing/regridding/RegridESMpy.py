@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
-"""Provides regridding for irregular grids."""
+"""
+Provides regridding for irregular grids.
+
+Copyright ESMValGroup: Andela, B., Broetz, B., de Mora, L., Drost, N., Eyring, V., Koldunov, N., Lauer, A., Predoi, V., Righi, M., Schlund, M., Vegas-Regidor, J., Zimmermann, K., Bock, L., Diblen, F., Dreyer, L., Earnshaw, P., Hassler, B., Little, B., Loosveldt-Tomas, S., Smeets, S., Camphuijsen, J., Gier, B. K., Weigel, K., Hauser, M., Kalverla, P., Galytska, E., Cos-Espuña, P., Pelupessy, I., Koirala, S., Stacke, T., Alidoost, S., Jury, M., Sénési, S., & Crocker, T. (2021). ESMValCore (Version v2.4.0rc3) [Computer software]. https://doi.org/10.5281/zenodo.3387139
+Distributed under license: Apache-2.0 License
+"""
+
 
 import ESMF
 import iris
 import numpy as np
 
 from ESMMapping import get_empty_data, map_slices, ref_to_dims_index
-#https://github.com/ESMValGroup/ESMValCore/blob/master/esmvalcore/preprocessor/_regrid_esmpy.py
 
 ESMF_MANAGER = ESMF.Manager(debug=False)
 
