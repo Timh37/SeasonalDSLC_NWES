@@ -1,11 +1,40 @@
-# SeasonalSLC_NWES
-Python code to analyze projected seasonal SLC on the NWES using CMIP6 data and high-resolution regional ocean model experiments, and various other utility scripts.
 
-Please cite
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+# SeasonalDSLC_NWES
+Python code to analyze projected seasonal ocean dynamic sea-level change (DSLC) on the Northwestern European Shelf (NWES), using CMIP6 data and high-resolution regional ocean model experiments, and various other utility scripts.
+
+This code accompanies:
 ```
 The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern European Shelf (in review), Hermans et al.
 ```
-when using this repository for your own studies.
+Please cite it when using this repository for your own studies.
+
+
 
 ## Downloading CMIP6 data
 We use wget scripts to download the raw CMIP6 data. Scripts are generated using search URLS. For example:
@@ -57,3 +86,9 @@ This repository also contains the scripts required to plot the figures in the ma
 | Suppl. Fig. 5 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig5_hist_fut_SWSA/cmip6_plot_SWSA.py) | zos_CMIP6_ssp585_n38_nwes_variant_averaged.nc, tauu_CMIP6_ssp585_n33_nwes_variant_averaged.nc, tauv_CMIP6_ssp585_n33_nwes_variant_averaged.nc, ens_model_list_ssp585.txt | Maps of historical and future SWSA for SSP5-8.5 |
 | Suppl. Fig. 6 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig6_obs/plot_ncep_aviso_SWSA_SSLA.py) | dt_global_allsat_msla_h_y1993m01-2019m04.nc, uwnd.mon.mean.nc, vwnd.mon.mean.nc (can be obtained from AVISO and NCEP websites) | Composite plots of SSLA (Aviso) and SWSA (derived from NCEP wind speed) in winter 2007 and summer 1995 |
 | Suppl. Fig. 7 | [**Link**](https://github.com/Timh37/SeasonalSLC_NWES/blob/main/code_for_figures/suppFig7_numrealizations/cmip6_compare_dSSLA_locs_numRealizations.py) | zos_CMIP6_ssp585_n39_nslocations_all_variants.nc, ens_model_list_ssp585.txt | Comparison of dSSLA for SSP5-8.5, 2081-2100 relative to 1995-2014 at coastal locations using 1 realization v.s. using all realizations |
+
+## Built with
+
+## License
+
+## Contact
