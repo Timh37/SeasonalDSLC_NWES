@@ -21,7 +21,7 @@ Python code to analyze projected seasonal ocean dynamic sea-level change (DSLC) 
 
 This code accompanies the manuscript:
 ```
-The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern European Shelf (in review), Hermans et al.
+Hermans et al. (2022). The Effect Of Wind Stress On Seasonal Sea-Level Change On the Northwestern European Shelf. Journal of Climate, 35, 6, 1745-1759, https://doi.org/10.1175/JCLI-D-21-0636.1
 ```
 Please cite it when using this repository for your own studies.
 
